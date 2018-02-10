@@ -45,6 +45,10 @@ public class CustomAnnotation {
 
             // System.out.println(aClass.getName());
 //       System.out.println(aClass);
+            String str = "test";
+            if ("test".equals(str)) {
+
+            }
             Method[] m = aClass.getDeclaredMethods();
             for (Method md : m) {
 
