@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @interface Annotation1 {
 
+    //String val() default "1";
     int play();
 
 }

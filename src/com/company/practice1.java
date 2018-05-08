@@ -14,7 +14,9 @@ public class practice1 {
     public static void main(String[] args) throws NoSuchFieldException {
         practice1 p =new practice1();
         Annotation[] a = p.getClass().getAnnotations();
-        for(Annotation aq1 : a) System.out.println(aq1.annotationType().getField("play"));
+        for(Annotation aq1 : a) {
+            System.out.println(aq1.annotationType().getField("play"));
+        }
 
     }
 }
