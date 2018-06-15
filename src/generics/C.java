@@ -37,7 +37,7 @@ public class C extends A {
 
         }
 
-//
+//      Below 3 statements will throw compile time error
 //        lst.add(new A());
 //        lst.add(new B());
 //        lst.add(new C());

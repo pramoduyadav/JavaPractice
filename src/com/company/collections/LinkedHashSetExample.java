@@ -31,5 +31,50 @@ public class LinkedHashSetExample {
         }
 
 
+        HashSet<String> set=new HashSet<String>();
+        set.add("Test");
+        set.add("Test");
+        Iterator<String> itr=set.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+
+        ArrayList<String> list=new ArrayList<String>();
+        list.add("TTest");
+        list.add("TTest");
+        Iterator<String> itr1=list.iterator();
+        while(itr1.hasNext()){
+            System.out.println(itr1.next());
+        }
+
+        HashMap<String,String> hm=new HashMap<String,String>();
+        hm.put("Hello","Test");
+        hm.put("World","Test");
+
+        for(String key : hm.keySet()) {
+            System.out.println(key);
+        }
+
+
+
+        ArrayList<String> list1=new ArrayList<String>();
+        list1.add("Hello");
+
+        method1(list1);
+        Iterator itr3 = list1.iterator();
+        while(itr3.hasNext()){
+            System.out.println(itr3.next());
+        }
+
+
+
+        //hm.keySet()
+
+
+
+    }
+
+    public static void method1(ArrayList<String> list) {
+        list.add("World");
     }
 }

@@ -5,12 +5,20 @@ import java.net.SocketException;
 import java.sql.SQLException;
 
 class A {
+    public static void methodOne() {
+        System.out.println("Method A");
+    }
+
     public void foo() throws IOException {
         System.out.println();
     }
 }
 
 class B extends A {
+    public static void methodOne() {
+        System.out.println("Method B");
+    }
+
     @Override
     public void foo() throws SocketException {
         System.out.println("safsdfsdf");
@@ -28,5 +36,8 @@ class B extends A {
        } catch(Exception e) {
 
        }
+
+       A a = new B();
+       a.methodOne();
     }
 }

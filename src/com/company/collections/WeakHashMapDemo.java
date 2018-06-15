@@ -6,6 +6,7 @@ class WeakHashMapDemo
 {
     public static void main(String args[])throws Exception
     {
+
         WeakHashMap m = new WeakHashMap();
         Demo d = new Demo();
 

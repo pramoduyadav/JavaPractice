@@ -2,8 +2,17 @@ package com.company.function;
 
 import java.util.function.Function;
 
+class Employee {
+    public static void getEmployee () {
+        System.out.println("employee get");
+    }
+}
+
 public class FunctionTest {
     public static void main(String[] args) {
+        Employee e = null;   /// reference is null then also it can call static method.
+        e.getEmployee();
+        Employee.getEmployee();
 
         Function<Integer, Integer> mainFunc = x -> x + 5;
         Function<Integer, Integer> mainFunc1 = x -> x * 2;

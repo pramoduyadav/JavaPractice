@@ -22,18 +22,18 @@ public class FailFastExample
         }
 
         System.out.println(lst);
-//        Set<String> phoneSet = new TreeSet<>();
-//        phoneSet.add("IPhone");
-//        phoneSet.add("Samsung");
-//        phoneSet.add("HTC");
-//        phoneSet.add("Nokia");
-//
-//        Iterator<String> itr = phoneSet.iterator();
-//
-//        while(itr.hasNext()) {
-//            System.out.println(itr.next());
-//            phoneSet.add("Xioami");
-//        }
+        Set<String> phoneSet = new TreeSet<>();
+        phoneSet.add("IPhone");
+        phoneSet.add("Samsung");
+        phoneSet.add("HTC");
+        phoneSet.add("Nokia");
+
+        Iterator<String> itr1 = phoneSet.iterator();
+
+        while(itr1.hasNext()) {
+            System.out.println(itr1.next());
+            phoneSet.add("Xioami");
+        }
 
         //itr.forEachRemaining(it -> System.out.println(it.toString()));
 

@@ -23,7 +23,7 @@ public class ExceptionHandling
 //        catch (Exception e) {
 //
 //        }
- 
+
 //        catch(NumberFormatException | Exception   ex)
 //        {
 //            System.out.println("This block handles all exception types");
