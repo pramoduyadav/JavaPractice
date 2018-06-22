@@ -4,6 +4,8 @@ public class Equaltest {
     public static void main(String[] args) {
         String str1 = new String("ABCD");
         String str2 = new String("ABCD");
+        String str4 = "Hello" + '}'; // Concat String + literal
+        System.out.println(str4);
         if (str1 == str2) {
             System.out.println("String 1 == String 2 is true");
         } else {

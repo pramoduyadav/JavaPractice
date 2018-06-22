@@ -1,4 +1,4 @@
-package generics.ubs.test10;
+package com.company.ubs.test10;
 
 public interface Animal {
     int numberOfEyes = 2;

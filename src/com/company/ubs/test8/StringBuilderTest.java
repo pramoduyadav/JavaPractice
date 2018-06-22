@@ -1,4 +1,4 @@
-package generics.ubs.test8;
+package com.company.ubs.test8;
 
 public class StringBuilderTest {
     public static void main(String[] args) {

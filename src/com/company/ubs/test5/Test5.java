@@ -1,4 +1,4 @@
-package generics.ubs.test5;
+package com.company.ubs.test5;
 
 import java.util.Arrays;
 

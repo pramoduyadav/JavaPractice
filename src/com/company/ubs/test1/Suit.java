@@ -1,4 +1,4 @@
-package generics.ubs.test1;
+package com.company.ubs.test1;
 
 import java.awt.*;
 

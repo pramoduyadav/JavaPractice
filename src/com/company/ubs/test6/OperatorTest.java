@@ -1,4 +1,4 @@
-package generics.ubs.test6;
+package com.company.ubs.test6;
 
 public class OperatorTest {
 

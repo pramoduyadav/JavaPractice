@@ -1,4 +1,4 @@
-package generics.ubs.test9;
+package com.company.ubs.test9;
 
 import java.util.*;
 

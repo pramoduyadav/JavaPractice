@@ -1,4 +1,4 @@
-package generics.ubs.test12;
+package com.company.ubs.test12;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package generics.ubs.test13;
+package com.company.ubs.test13;
 
 public class Animal {
     {

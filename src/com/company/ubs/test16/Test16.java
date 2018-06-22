@@ -1,4 +1,4 @@
-package generics.ubs.test16;
+package com.company.ubs.test16;
 
 class P extends Exception {}
 class Q extends P {}
