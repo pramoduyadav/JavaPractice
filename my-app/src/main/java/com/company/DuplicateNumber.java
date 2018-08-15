@@ -1,8 +1,7 @@
 package com.company;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class DuplicateNumber {
 
@@ -32,5 +31,7 @@ public class DuplicateNumber {
         numbers.add(22);
         DuplicateNumber dn = new DuplicateNumber();
         System.out.println("Duplicate Number: "+dn.findDuplicateNumber(numbers));
+
+
     }
 }

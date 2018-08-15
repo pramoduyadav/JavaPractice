@@ -18,5 +18,18 @@ public class ComparableSorting {
         });
         sorted.addAll(random);
         System.out.println("Sorted Set: " + sorted);
+
+
+        // 2nd Example
+        Map<String, String> m = new HashMap<>();
+        m.put("1", "Pramod");
+        m.put("2", "Vinod");
+        m.put("3", "Manoj");
+        m.put("4", "Harish");
+
+        List<String> lst = new ArrayList<>(m.values());
+        Collections.sort(lst);
+        System.out.println(lst);
+
     }
 }

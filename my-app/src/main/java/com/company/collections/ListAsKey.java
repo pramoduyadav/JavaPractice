@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ListAsKey {
 
-    // We are adding immutable object as key to HashMap which is bad practice
+    // We are adding mutable object as key to HashMap which is bad practice
     //
 
     public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class ListAsKey {
             add("Manoj");
             add("Vinod");
         }};
+
 
         System.out.println(strList.toString());
         System.out.println(strList.hashCode());

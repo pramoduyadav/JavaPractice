@@ -3,7 +3,18 @@ package com.company;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class Solution1 {
+class Sol {
+    public void showMe() {
+        System.out.println("Parent class");
+    }
+}
+public class Solution1 extends Sol{
+
+    @Override
+    public void showMe() {
+        super.showMe();   // calling parent class method using super
+        System.out.println("Child class");
+    }
 
     public int solution(int N) {
 
@@ -49,6 +60,9 @@ public class Solution1 {
 
 
     public static void main(String[] args) {
+        Solution1 solution1 = new Solution1();
+        solution1.showMe();
+
         Solution1 s = new Solution1();
         System.out.println(s.solution(15));
     }

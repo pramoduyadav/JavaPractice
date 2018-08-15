@@ -16,7 +16,7 @@ public class NarrowingException extends ReadFile{
         System.out.println("------------- tion");
     }
 
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
         NarrowingException ne = new NarrowingException();
         try {
             ne.readFile();
@@ -28,7 +28,7 @@ public class NarrowingException extends ReadFile{
 
 class ReadFile {
 
-    public void readFile() throws ArithmeticException  {
+    public void readFile()   {
         System.out.println("IO Exception");
     }
 }
