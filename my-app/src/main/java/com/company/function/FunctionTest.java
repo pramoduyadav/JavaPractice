@@ -22,6 +22,7 @@ public class FunctionTest {
 
         FunctionTest ft =new FunctionTest();
         System.out.println(ft.customFunc(s -> "Hello Pramod"));
+        System.out.println("pramod yadav");
     }
 
 

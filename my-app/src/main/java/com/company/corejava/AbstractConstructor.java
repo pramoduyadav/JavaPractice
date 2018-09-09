@@ -18,6 +18,7 @@ public class AbstractConstructor extends Emp {
     @Override
     void method() {
         System.out.println("method");
+
     }
 
     public static void main(String[] args) {

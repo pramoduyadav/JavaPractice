@@ -16,7 +16,7 @@ public class COWArrayList {
         while(iterator.hasNext()) {
             //System.out.println(iterator.next() + " ");
             if(iterator.next().equals("London")) {
-                iterator.remove();
+                //iterator.remove();
             }
         }
 

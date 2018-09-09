@@ -12,7 +12,7 @@ import java.io.IOException;
 public class NarrowingException extends ReadFile{
 
     @Override
-    public void readFile() throws ArithmeticException {
+    public void readFile() throws IOException {
         System.out.println("------------- tion");
     }
 
@@ -20,7 +20,7 @@ public class NarrowingException extends ReadFile{
         NarrowingException ne = new NarrowingException();
         try {
             ne.readFile();
-        } catch (RuntimeException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -28,7 +28,7 @@ public class NarrowingException extends ReadFile{
 
 class ReadFile {
 
-    public void readFile()   {
+    public void readFile() throws Exception   {
         System.out.println("IO Exception");
     }
 }

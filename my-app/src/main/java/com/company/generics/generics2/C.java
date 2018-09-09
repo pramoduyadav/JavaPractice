@@ -19,7 +19,7 @@ public class C extends A {
 //        listA = listB;  //
 //        listB = listA;
 
-        //List<C> lst1 =
+        //List<C>    lst1 =
           methodOne(lst);
 
           List<C> lst1 = new ArrayList<>();
