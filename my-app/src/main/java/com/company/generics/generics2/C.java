@@ -15,16 +15,30 @@ public class C extends A {
         List<A> lst = new ArrayList<>();
         List<A> listA = new ArrayList<>();
         List<B> listB = new ArrayList<>();
+        List<Object> listObj = new ArrayList<>();
 //
-//        listA = listB;  //
-//        listB = listA;
+//        listA = listB;    // compile error
+//        listB = listA;    // compile error
 
         //List<C>    lst1 =
-          methodOne(lst);
+         // methodOne(lst);
 
-          List<C> lst1 = new ArrayList<>();
-          lst1.add(new C());
-          methodTwo(lst1);
+      List<C> lst1 = new ArrayList<>();
+      lst1.add(new C());
+      lst1.add(new C());
+
+        List<B> lst2= new ArrayList<>();
+        lst2.add(new B());
+        lst2.add(new B());
+
+        List<A> lst3= new ArrayList<>();
+        lst3.add(new B());
+        lst3.add(new C());
+
+        methodTwo(lst1);
+        methodTwo(lst2);
+        methodTwo(lst3);
+        //methodTwo(listObj); error
     }
 
     public static void methodTwo(List<? extends A> lst) {
@@ -47,7 +61,7 @@ public class C extends A {
         lst.add(new B());
         lst.add(new C());
         lst.add(new D());
-
+        //lst.add(new Object());
         System.out.println(lst.size());
         System.out.println(lst.get(0));
         System.out.println(lst.get(1));

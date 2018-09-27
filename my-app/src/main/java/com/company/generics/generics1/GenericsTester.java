@@ -6,6 +6,7 @@ import java.util.List;
 public class GenericsTester {
 
     public static void addCat(List<? super Cat> catList) {  // all list are welcome which are superType of Cat and Cat itself
+        // we are restricting this method to add Cat or subtypes of Cat
         catList.add(new RedCat());   // RedCat extends Cat
         catList.add(new Cat());      // Cat itself
         
@@ -20,6 +21,14 @@ public class GenericsTester {
         List<Object> ObjList= new ArrayList<Object>();
         List<RedCat> redCatList= new ArrayList<RedCat>();
         List<Dog> dogList= new ArrayList<Dog>();
+
+        ObjList.add(new Object());
+        ObjList.add(new Animal());
+        ObjList.add(new Cat());
+        ObjList.add(new RedCat());
+        ObjList.add(new Dog());
+
+
 
         //add list of super class Animal of Cat class
         animalList.add(new Animal());
@@ -37,9 +46,9 @@ public class GenericsTester {
         System.out.println(animalList.get(2));
 
         //add list of Cat class
-        //addCat(catList);
+        addCat(catList);
 
-        //addCat(ObjList);
+        addCat(ObjList);
 
         //compile time error
         //can not add list of subclass RedCat of Cat class
@@ -47,7 +56,7 @@ public class GenericsTester {
 
         //compile time error
         //can not add list of subclass Dog of Superclass Animal of Cat class
-        //addCat.addMethod(dogList);
+        //addCat(dogList);
     }
 }
 class Animal {}
