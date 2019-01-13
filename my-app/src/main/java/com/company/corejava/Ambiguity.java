@@ -1,11 +1,14 @@
 package com.company.corejava;
 
+import java.io.IOException;
+
 public class Ambiguity {
 //    public static void print(Number n) {
 //        System.out.println(n);
 //    }
 
-    public static void print(Double n) {
+
+    public static void print(Double n)  {
         System.out.println(n);
     }
 
@@ -15,18 +18,20 @@ public class Ambiguity {
 
 
 
+
+
 //    public static void print(Float n) {
 //        System.out.println(n);
 //    }
 
-
-    public static void print(Object n) {
-        System.out.println(n);
-    }
+//
+//    public static void print(Object n) {
+//        System.out.println(n);
+//    }
 
 
     public static void main(String[] args) {
-//        print(3);
+        //print(3);
         //print (null);
     }
 }

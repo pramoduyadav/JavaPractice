@@ -88,7 +88,7 @@ public class EmployeeComparator {
 
         // Normal sorting but object need to implement Comparable interface
         Arrays.sort(empArray);
-        System.out.println(Arrays.toString(empArray));
+        System.out.prinNtln(Arrays.toString(empArray));
     }
 }
 

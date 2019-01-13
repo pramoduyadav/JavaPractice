@@ -16,6 +16,9 @@ public class GenericsTester {
     }
 
     public static void main(String[] args) {
+        List<? extends Cat> redCats = new ArrayList<>();
+        //redCats.add(new RedCat());  doesn't work
+
         List<Animal> animalList= new ArrayList<Animal>();
         List<Cat> catList= new ArrayList<Cat>();
         List<Object> ObjList= new ArrayList<Object>();
