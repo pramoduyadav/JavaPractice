@@ -1,9 +1,8 @@
 package com.company.collections;
 
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ConcurrentListExample {
@@ -16,9 +15,12 @@ public class ConcurrentListExample {
         list.add("4");
         list.add("5");
 
+
         // get the iterator
         Iterator<String> it = list.iterator();
-        list.remove("1");
+        //list.remove("1");
+        // After iterator object is created; 1 item go removed;
+        // since ArrayList id fail fast it will throw ConcurrentModificationException
         //manipulate list while iterating
         while(it.hasNext()){
             System.out.println("list is:"+list);
@@ -32,6 +34,9 @@ public class ConcurrentListExample {
         }
 
         System.out.println("At last :: "+list);
+
+        ConcurrentHashMap m = new ConcurrentHashMap(200 , 0.75f, 10);
+        System.out.println(m.size());
     }
 
 }

@@ -5,6 +5,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SystemExit {
     public static void main(String[] args) {
 
+
+        System.out.println(Runtime.getRuntime().availableProcessors());
+
         AtomicInteger atomicInteger = new AtomicInteger();
 
         System.out.println(atomicInteger.get());

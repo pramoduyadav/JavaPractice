@@ -20,8 +20,6 @@ class pramod implements harish{
 //    public void left() {
 //        System.out.println("hwhwqe");
 //    }
-
-
 }
 
 public class ConsumerTest {
@@ -48,7 +46,7 @@ public class ConsumerTest {
                 System.out.println(x + "OK!!!");
         };
 
-        consumer1.andThen(consumer2).accept("TestConsumerAfterThen - ");
+        consumer1.andThen(consumer2).accept("TestConsumPramoderAfterThen - ");
     }
 
 

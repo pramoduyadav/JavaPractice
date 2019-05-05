@@ -14,14 +14,15 @@ public class FailFastExample
         lst.add("Nokia");
 
         Iterator<String> itr = lst.iterator();
+        lst.remove("HTC"); // because of this line will throws ConcurrentModificationException while iterating
+        // We are trying to modify the list Obj after creation of iterator object.
 
         while(itr.hasNext()) {
             if(itr.next().equalsIgnoreCase("IPhone")) {
-                //itr.remove();
+                System.out.println("removed");
+                itr.remove();
 
             }
-
-
         }
 
         lst.remove("Samsung");

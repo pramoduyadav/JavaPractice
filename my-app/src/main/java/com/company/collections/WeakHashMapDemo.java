@@ -1,5 +1,6 @@
 package com.company.collections;
 
+import java.lang.ref.SoftReference;
 import java.util.*;
 
 class WeakHashMapDemo
