@@ -13,9 +13,9 @@ public class Ambiguity {
     }
 
 
-    public static void print(Double n)  {
-        System.out.println(n);
-    }
+//    public static void print(Double n)  {
+//        System.out.println(n);
+//    }
 
     public static void print(Integer n) {
 

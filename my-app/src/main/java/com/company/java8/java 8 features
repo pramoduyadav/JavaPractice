@@ -1,0 +1,13 @@
+Java 8 features
+	Stream API
+	Lambdas
+	FunctionalInterface =>
+		Consumer  => consumes a value without returning any value [accept,  andThen]
+		Predicate => takes a single value as parameter, and returns true or false [test]
+		Supplier. =>  dont't consumes any value but supplies(returns) a value of some sorts
+		Function   => takes a single parameter and returns a single value [apply]
+		BiConsumer =>
+	Optional
+
+
+Microservices
