@@ -16,10 +16,10 @@ public class SetExample {
         set2.add("Yadav");
         set2.add("Manoj");
 
-//        System.out.println(set1);
-//        System.out.println(set2);
-//
-//        System.out.println(set1.equals(set2));
+        System.out.println(set1);
+        System.out.println(set2);
+
+        System.out.println(set1.equals(set2));
 
 
         List<String> lst = Arrays.asList("Pramod", "Yadav" ,"Vinod", "Yadav");

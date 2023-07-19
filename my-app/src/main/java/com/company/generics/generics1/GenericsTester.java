@@ -40,10 +40,10 @@ public class GenericsTester {
 
 
         //add list of super class Animal of Cat class
-//        animalList.add(new Animal());
-//        animalList.add(new Cat());
-//        animalList.add(new RedCat());
-//        animalList.add(new Dog());
+        animalList.add(new Animal());
+        animalList.add(new Cat());
+        animalList.add(new RedCat());
+        animalList.add(new Dog());
 
         System.out.println(animalList.size());
 
