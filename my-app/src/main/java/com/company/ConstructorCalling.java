@@ -22,8 +22,8 @@ public class ConstructorCalling {
 
 class BBB extends ConstructorCalling {
     BBB(){
-     //greeting();
-     //prints();
+     greeting();
+     prints();
     }
 
     void greeting() {

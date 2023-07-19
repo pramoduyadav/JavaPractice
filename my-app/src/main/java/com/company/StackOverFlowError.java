@@ -33,6 +33,6 @@ public class StackOverFlowError {
         System.out.println(stack.size());
         System.out.println(stack.capacity());
 
-        // s.calculateFactorial(5);
+         s.calculateFactorial(5);
     }
 }

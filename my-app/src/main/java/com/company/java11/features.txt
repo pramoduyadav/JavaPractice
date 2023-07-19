@@ -1,0 +1,24 @@
+Java 9
+    Java modules
+    Class Loader changes
+    Launching external process
+    CompletableFuture got timeout feature
+    Improvement in G1 Garbage Collector (default one)
+
+Java 10
+    var keyword
+
+Java 11
+    2 new Garbage Collectors
+        Epsilon GC
+        ZGC (potential to become best HotSpot collector)
+    Removed methods
+        Thread.stop(Throwable)
+        Thread.destroy()
+    Removed modules
+        SOAP module
+        TLS 1.3 encryption support very different from TLS 1.2
+    HTTPClient inclusion -> No more having dependency on Apache HTTPClient
+
+
+
